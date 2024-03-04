@@ -1,8 +1,0 @@
-{
-    "sku": "linux-a0-basic",
-    "pricing_type": "payg",
-    "offer_sku": "linux-a0-basic",
-    "offer_type": "perhour",
-    "region": "us-east",
-    "price": 0.018
-}

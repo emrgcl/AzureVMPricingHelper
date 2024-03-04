@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flask files
+instance/
+.webassets-cache
+
+# SQLite database file
+*.db
+*.sqlite
+
+# React/node files
+node_modules/
+/build/
+
+# Environment files
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime
+*.sublime-workspace
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# data
+offers.json
