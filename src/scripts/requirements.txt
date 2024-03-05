@@ -1,0 +1,6 @@
+
+app
+flask
+flask_restx
+flask_sqlalchemy
+stdlib_list
