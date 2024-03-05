@@ -1,3 +1,4 @@
+from flask import request
 from flask_restx import Namespace, Resource, fields
 from ..models.models import Offer
 from ..database import db
@@ -24,3 +25,23 @@ class OfferResource(Resource):
         if offer:
             return offer
         api.abort(404)
+        
+@api.route('/offer-types')
+class OfferTypesResource(Resource):
+    @api.doc('get_offer_types')
+    def get(self):
+        offer_types = Offer.query.with_entities(Offer.offer_type).distinct().all()
+        if offer_types:
+            return {'offer_types': [offer_type[0] for offer_type in offer_types]}
+        
+        return {'message': 'No SKUs provided'}, 400
+    
+@api.route('/pricing-types')
+class OfferTypesResource(Resource):
+    @api.doc('get_offer_types')
+    def get(self):
+        offer_types = Offer.query.with_entities(Offer.pricing_type).distinct().all()
+        if offer_types:
+            return {'pricing_types': [pricing_type[0] for pricing_type in offer_types]}
+        
+        return {'message': 'No SKUs provided'}, 400

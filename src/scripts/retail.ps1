@@ -1,5 +1,5 @@
 # Variables
-$subscriptionId = "<subscription-id>" # Your Azure Subscription ID
+#$subscriptionId = "<subscription-id>" # Your Azure Subscription ID
 $offerId = "MS-AZR-0003p" # Offer ID for Pay-As-You-Go subscriptions, change as needed
 $currency = "USD" # Currency
 $locale = "en-US" # Locale
